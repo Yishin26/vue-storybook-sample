@@ -10,9 +10,15 @@
 [Component Driven 理念](https://www.componentdriven.org/)
 
 
-## build storybook-static
+## 指令
 
-建立靜態網頁，可在資料夾中直接檢視規格頁
+1.啟動storybook
+
+```
+npm run build-storybook
+```
+
+2.build storybook-static：建立靜態網頁，可在資料夾中直接檢視規格頁 
 
 ```
 npm run build-storybook
