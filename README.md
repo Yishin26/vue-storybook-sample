@@ -1,24 +1,12 @@
 # vue-storybook-sample
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 參考資料
 
-### Compiles and minifies for production
-```
-npm run build
-```
+[storybook官方文件](https://storybook.js.org/docs/vue/get-started/install)
 
-### Lints and fixes files
-```
-npm run lint
-```
+[玩轉 Storybook](https://ithelp.ithome.com.tw/articles/10237430)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[Component Driven 理念](https://www.componentdriven.org/)
+
+
