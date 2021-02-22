@@ -15,7 +15,7 @@
 1.啟動storybook
 
 ```
-npm run build-storybook
+npm run storybook
 ```
 
 2.build storybook-static：建立靜態網頁，可在資料夾中直接檢視規格頁 
