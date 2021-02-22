@@ -5,8 +5,10 @@ export default {
   component: MyButton,
   
   argTypes: {
+    //backgroundColor可以使用control:'color'，這樣Storybook會幫我們產生ColorPicker
     backgroundColor: { control: 'color' },
-    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } }
+    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
+    onClick: { action: '按鈕按下了' },
   }
 }
 
