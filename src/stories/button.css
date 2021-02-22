@@ -28,3 +28,8 @@
   font-size: 16px;
   padding: 12px 24px;
 }
+/*新增一個outline樣式*/
+.storybook-button--outline {
+  border-width: 1px;
+  border-style: solid;
+}

@@ -1,39 +1,54 @@
-import MyButton from './Button.vue';
+import MyButton from './Button.vue'
 
 export default {
   title: 'Example/Button',
   component: MyButton,
+  
   argTypes: {
     backgroundColor: { control: 'color' },
-    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
-  },
-};
+    size: { control: { type: 'select', options: ['small', 'medium', 'large'] } }
+  }
+}
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MyButton },
-  template: '<my-button @onClick="onClick" v-bind="$props" />',
-});
+  template: '<my-button @onClick="onClick" v-bind="$props" />'
+})
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
   primary: true,
-  label: 'Button',
-};
+  label: 'Button'
+}
 
-export const Secondary = Template.bind({});
+export const Secondary = Template.bind({})
 Secondary.args = {
-  label: 'Button',
-};
+  label: 'Button'
+}
 
-export const Large = Template.bind({});
+export const Large = Template.bind({})
 Large.args = {
   size: 'large',
-  label: 'Button',
-};
+  label: 'Button'
+}
 
-export const Small = Template.bind({});
+export const Small = Template.bind({})
 Small.args = {
   size: 'small',
-  label: 'Button',
-};
+  label: 'Button'
+}
+//加入兩種狀態
+export const BlackOutline = Template.bind({})
+BlackOutline.args = {
+  label: 'Black Outline Button',
+  outline: true,
+  outlineColor: 'black'
+}
+
+export const GreenOutline = Template.bind({})
+GreenOutline.args = {
+  label: 'Green Outline Button',
+  outline: true,
+  outlineColor: 'green'
+}
