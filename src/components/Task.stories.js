@@ -1,47 +1,61 @@
-import Task from './Task';
-import { action } from '@storybook/addon-actions';
-
+// src/components/Task.stories.js
+import { action } from "@storybook/addon-actions";
+import Task from "./Task";
 export default {
-  title: 'Task',
-  component: Task,
+  title: "Task",
   // Our exports that end in "Data" are not stories.
-  excludeStories: /.*Data$/,
+  excludeStories: /.*Data$/
 };
-
 export const actionsData = {
-  onPinTask: action('pin-task'),
-  onArchiveTask: action('archive-task'),
+  onPinTask: action("onPinTask"),
+  onArchiveTask: action("onArchiveTask")
 };
 
-const Template = (args, { argTypes }) => ({
+export const taskData = {
+  id: "1",
+  title: "Test Task",
+  state: "Task_INBOX",
+  updated_at: new Date(2019, 0, 1, 9, 0)
+};
+
+const taskTemplate = `<task :task="task" @archiveTask="onArchiveTask" @pinTask="onPinTask"/>`;
+
+// default task state
+export const Default = () => ({
   components: { Task },
-  props: Object.keys(argTypes),
-  methods: actionsData,
-  template: '<Task v-bind="$props" @pin-task="onPinTask" @archive-task="onArchiveTask" />',
+  template: taskTemplate,
+  props: {
+    task: {
+      default: () => taskData
+    }
+  },
+  methods: actionsData
 });
-
-export const Default = Template.bind({});
-Default.args = {
-  task: {
-    id: '1',
-    title: 'Test Task',
-    state: 'TASK_INBOX',
-    updatedAt: new Date(2018, 0, 1, 9, 0),
+// pinned task state
+export const Pinned = () => ({
+  components: { Task },
+  template: taskTemplate,
+  props: {
+    task: {
+      default: () => ({
+        ...taskData,
+        state: "TASK_PINNED"
+      })
+    }
   },
-};
-
-export const Pinned = Template.bind({});
-Pinned.args = {
-  task: {
-    ...Default.args.task,
-    state: 'TASK_PINNED',
+  methods: actionsData
+});
+// archived task state
+export const Archived = () => ({
+  components: { Task },
+  template: taskTemplate,
+  props: {
+    task: {
+      default: () => ({
+        ...taskData,
+        state: "TASK_ARCHIVED"
+      })
+    }
   },
-};
-
-export const Archived = Template.bind({});
-Archived.args = {
-  task: {
-    ...Default.args.task,
-    state: 'TASK_ARCHIVED',
-  },
-};
+  methods: actionsData
+});

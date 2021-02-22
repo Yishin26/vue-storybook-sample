@@ -754,7 +754,7 @@
    content: "\e65d";
  }
  .icon-check:before {
-   content: "\e65e";
+   content: "✓";
  }
  .icon-form:before {
    content: "\e65f";
