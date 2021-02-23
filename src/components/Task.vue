@@ -17,7 +17,7 @@
         :readonly="true"
         :value="this.task.title"
         placeholder="Input title"
-        :style="{'background': '#d5d7d8'}"
+        :style="{'background': 'white'}"
       />
      
     </div>
