@@ -17,7 +17,9 @@
         :readonly="true"
         :value="this.task.title"
         placeholder="Input title"
+        :style="{'background': '#d5d7d8'}
       />
+     
     </div>
     <div class="actions">
       <a @click="$emit('pin-task', task.id)" v-if="!isChecked">
