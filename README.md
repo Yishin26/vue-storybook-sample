@@ -8,8 +8,8 @@
 [玩轉 Storybook](https://ithelp.ithome.com.tw/articles/10237430)
 
 [Component Driven 理念](https://www.componentdriven.org/)
-
-
+- - -
+&nbsp;
 ## 指令
 
 #### 1.啟動storybook
@@ -44,7 +44,7 @@ vue add @vue/unit-jest
 npm install --save-dev @storybook/addon-jest
 ```
 
-#### 6.Chromatic
+#### 6.[Chromatic](https://www.chromatic.com/)
 可連動做自動的視覺回溯測試 
 ```
 npm install --save-dev chromatic
