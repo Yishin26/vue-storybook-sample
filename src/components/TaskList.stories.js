@@ -11,7 +11,10 @@ const paddedList = () => {
 export default {
   title: "TaskList",
   excludeStories: /.*Data$/,
-  decorators: [paddedList]
+  decorators: [paddedList],
+  parameters: {
+    jest: ['TaskList.spec.js'],
+  },
 };
 
 export const defaultTasksData = [
