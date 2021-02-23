@@ -3,13 +3,16 @@ import MyButton from './Button.vue'
 export default {
   title: 'Example/Button',
   component: MyButton,
-  
+  parameters: {
+    jest: ['button.spec.js'],
+  },
   argTypes: {
     //backgroundColor可以使用control:'color'，這樣Storybook會幫我們產生ColorPicker
     backgroundColor: { control: 'color' },
     size: { control: { type: 'select', options: ['small', 'medium', 'large'] } },
     onClick: { action: '按鈕按下了' },
   }
+ 
 }
 
 const Template = (args, { argTypes }) => ({
