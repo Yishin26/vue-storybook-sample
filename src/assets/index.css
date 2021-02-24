@@ -520,7 +520,7 @@
    content: "\e60e";
  }
  .icon-face-sad:before {
-   content: "\e60f";
+   content: "☹︎";
  }
  .icon-face-neutral:before {
    content: "\e610";
