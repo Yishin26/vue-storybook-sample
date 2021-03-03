@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit:watch": "vue-cli-service test:unit --watch",
     "test:generate-output": "vue-cli-service test:unit --json --outputFile=.jest-test-results.json",
     "lint": "vue-cli-service lint",
     "build-storybook": "build-storybook",
@@ -15,6 +16,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "firebase-tools": "^9.4.0",
+    "lodash": "^4.17.21",
     "vue": "^2.6.11",
     "vuex": "^3.6.2"
   },

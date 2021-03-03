@@ -1,23 +1,28 @@
 <template>
   <div id="app">
-   
-   <InboxScreen />
+    <TestForm />
+    <Counter />
+    <InboxScreen />
   </div>
 </template>
 
 <script>
-import InboxScreen from './components/InboxScreen.vue';
+import InboxScreen from './components/InboxScreen.vue'
+import Counter from './components/Counter'
+import TestForm from './components/TestForm.vue'
 
 export default {
   name: 'App',
   components: {
-    InboxScreen
+    InboxScreen,
+    Counter,
+    TestForm
   }
 }
 </script>
 
 <style>
-@import "./assets/index.css";
+@import './assets/index.css';
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

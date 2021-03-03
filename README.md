@@ -8,6 +8,14 @@
 [玩轉 Storybook](https://ithelp.ithome.com.tw/articles/10237430)
 
 [Component Driven 理念](https://www.componentdriven.org/)
+
+## kinanson的單元測試技術回憶3篇
+
+[vue-如何為vue補上單元測試來確保品質](https://dotblogs.com.tw/kinanson/2017/07/24/211543)
+
+[vue-如何寫一個可測試的組件](https://dotblogs.com.tw/kinanson/2017/07/24/211543)
+
+[vue-使用jest和官方的vue test utils來寫單元測試](https://dotblogs.com.tw/kinanson/2017/10/17/222548)
 - - -
 &nbsp;
 ## 指令
