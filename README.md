@@ -78,4 +78,7 @@ npm install --save-dev chromatic
 #### 7.[Cypress E2E自動化測試工具](https://www.cypress.io/)
 ```
 npm install cypress
+node_modules/.bin/cypress open
+node_modules/.bin/cypress run --record --key 一組序號
+
 ```
