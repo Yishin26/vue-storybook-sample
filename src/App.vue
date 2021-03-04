@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <NumberRenderer />
+    <FormSubmitter />
     <InboxScreen />
   </div>
 </template>
 
 <script>
 import InboxScreen from './components/InboxScreen.vue'
-import NumberRenderer from './components/NumberRenderer.vue'
+import FormSubmitter from './components/FormSubmitter.vue'
 
 export default {
   name: 'App',
   components: {
-    InboxScreen,NumberRenderer 
+    InboxScreen,FormSubmitter
   }
 }
 </script>

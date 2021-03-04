@@ -3,13 +3,20 @@
 
 ## 參考資料
 
-[storybook官方文件](https://storybook.js.org/docs/vue/get-started/install)
+[Storybook官方文件](https://storybook.js.org/docs/vue/get-started/install)
 
 [玩轉 Storybook](https://ithelp.ithome.com.tw/articles/10237430)
 
 [Component Driven 理念](https://www.componentdriven.org/)
 
-[vue測試指南](https://lmiller1990.github.io/vue-testing-handbook/zh-CN/)
+[Vue 组件的单元测试(Vue Cookbook)](https://cn.vuejs.org/v2/cookbook/unit-testing-vue-components.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%B5%8B%E8%AF%95%EF%BC%9F)
+
+[Vue測試指南](https://lmiller1990.github.io/vue-testing-handbook/zh-CN/)
+
+## 3 steps of Unit test：
+- 安排（Arrange）：为测试做好设置。在我们的用例中，是渲染了组件
+- 行动（Act）：对系统执行操作
+- 断言（Assert）：确保真实的结果匹配你的期望
 
 ## kinanson的單元測試技術回憶3篇
 
