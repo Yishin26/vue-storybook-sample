@@ -26,6 +26,12 @@
 
 [vue-使用jest和官方的vue test utils來寫單元測試](https://dotblogs.com.tw/kinanson/2017/10/17/222548)
 
+## 其他vue測試參考案例
+[讓我們使用 Cypress 開始為 LIFF app 撰寫單元測試](https://engineering.linecorp.com/zh-hant/blog/cypress-liff-unit-test/)
+
+[Cypress 官方文件](https://docs.cypress.io/guides/getting-started/writing-your-first-test.html#Add-a-test-file)
+
+
 
 - - -
 &nbsp;
@@ -67,4 +73,9 @@ npm install --save-dev @storybook/addon-jest
 可連動做自動的視覺回溯測試 
 ```
 npm install --save-dev chromatic
+```
+
+#### 7.[Cypress E2E自動化測試工具](https://www.cypress.io/)
+```
+npm install cypress
 ```

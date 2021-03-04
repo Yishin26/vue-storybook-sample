@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "cypress": "^6.6.0",
     "firebase-tools": "^9.4.0",
     "flush-promises": "^1.0.2",
     "lodash": "^4.17.21",
