@@ -1,18 +1,16 @@
 <template>
   <div id="app">
-    <FormSubmitter />
     <InboxScreen />
   </div>
 </template>
 
 <script>
 import InboxScreen from './components/InboxScreen.vue'
-import FormSubmitter from './components/FormSubmitter.vue'
 
 export default {
   name: 'App',
   components: {
-    InboxScreen,FormSubmitter
+    InboxScreen
   }
 }
 </script>
