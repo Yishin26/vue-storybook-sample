@@ -9,6 +9,8 @@
 
 [Component Driven 理念](https://www.componentdriven.org/)
 
+[一次搞懂單元測試、整合測試、端對端測試之間的差異](https://blog.miniasp.com/post/2019/02/18/Unit-testing-Integration-testing-e2e-testing)
+
 [Vue 组件的单元测试(Vue Cookbook)](https://cn.vuejs.org/v2/cookbook/unit-testing-vue-components.html#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%B5%8B%E8%AF%95%EF%BC%9F)
 
 [Vue測試指南](https://lmiller1990.github.io/vue-testing-handbook/zh-CN/)
